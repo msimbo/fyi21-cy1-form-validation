@@ -16,8 +16,9 @@ regForm.addEventListener('click', function (e) {
   } else {
     console.log('sending to server')
   }
+
+  //@TODO: add the validation for email
+
+  //@TODO: add the validation for password
+
 })
-
-// 4. Other, it's OK.
-
-// 5. Give feedback when we click the register
