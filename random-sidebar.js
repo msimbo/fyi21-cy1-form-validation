@@ -7,7 +7,7 @@ alert(todaysDate)
 
 // window > document > bunch of calls
 
-// Browser environment
+// Browser Environment
 // Chrome (V8)
 // Firefox (SpiderM)
 // Edge (Shakara)

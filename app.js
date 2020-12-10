@@ -1,18 +1,23 @@
+// 1. get DOM element
+const regForm = document.getElementById('registration-form')
 const username = document.getElementById('username')
-// const email = document.getElementById("email")
+const usernameErr = username.nextElementSibling
+// const usernameErr = document.getElementById("usernameErr")
 
-const usernameValue = username.value
+// 2. Add event / modification
 
-// 2. Check if the value is empty
-// console.log(usernameValue)
-// 3. If empty, give user some feedback
-// conditionals
-if (usernameValue === '') {
-//   // what should happen
-  console.log('Please enter your username!')
+regForm.addEventListener('click', function (e) {
+  e.preventDefault()
 
-//   alert("Please enter your username!")
-}
-
+  // 2. Check if the value is empty
+  if (username.value === '') {
+    // 3. If empty, give user some feedback
+    usernameErr.className = 'block bg-red-500 text-white'
+  } else {
+    console.log('sending to server')
+  }
+})
 
 // 4. Other, it's OK.
+
+// 5. Give feedback when we click the register
