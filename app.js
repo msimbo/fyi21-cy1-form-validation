@@ -37,7 +37,12 @@ regForm.addEventListener('click', function (e) {
  else { console.log('sending to server')}
   //@TODO: add the validation for email
 
-  
+  if (Confirmpassword.value === '') {
+    // 3. If empty, give user some feedback
+    ConfirmpasswordErr.className = 'block bg-red-500 text-white'
+  } else {
+    console.log('sending to server')
+  }
 
   //@TODO: add the validation for password
 
