@@ -2,31 +2,47 @@
 const regForm = document.getElementById('registration-form')
 
 const username = document.getElementById('username')
-const usernameErr = username.nextElementSibling
+const email = document.getElementById('email')
 
-username.addEventListener('blur', function (e) {
-  if (username.value !== '') {
-    e.target.nextElementSibling.innerHTML = '<small class="success">✔ Complete</small>'
-  }
-})
-
-// 2. Add event / modification
-regForm.addEventListener('click', function (e) {
+regForm.addEventListener('submit', function (e) {
   e.preventDefault()
 
-  // 2. Check if the value is empty
-  if (username.value === '') {
-    // 3. If empty, give user some feedback
-    usernameErr.innerHTML = '<small class="error"> ❌ Please enter your username </small>'
-  } else {
-    console.log('Sending to server')
-  }
-  //@TODO: add the validation for email
+  validateEmpty(username)
 
-  //@TODO: add the validation for password
+  //@TODO: add the validation for email (Code Challenge 5a)
+  //@TODO: Code Challenge 5b: Refactor your CC 5a to use function with the "blueprints" below
+
+  //@TODO: add the validation for password (Code Challenge 5a)
+  //@TODO: Code Challenge 5b: Refactor your CC 5a to use function with the "blueprints" below
 })
 
-function showError(){
-  // what should be done...
+function validateEmpty(input) {
+  console.log(input)
+  if (input.value === '') {
+      showError(input)
+  } else {
+      showSuccess(input)
+  }
 }
 
+function showError(input){
+  // steps to do this...
+  console.log('input is empty')
+}
+
+function showSuccess () {
+    console.log('you are ready to submit')
+}
+
+function validatePassMatch(password1, password2){
+  //@TODO: check if the passwords match
+}
+
+function validateIsEmail(email){
+  //@TODO: check if input is an email
+}
+
+
+function validateMinLength(input){
+  //@TODO: check length
+}
