@@ -23,7 +23,7 @@ regForm.addEventListener('click', function (e) {
 if (username.value ==='') {
   usernameErr.className = 'block bg-red-500 text-white'
 } else {
-  usernameSuccess.className = 'block bg-green-500 text-white'
+  usernameSuccess.className = 'block bg-green-600 text-white'
 }
 
 
@@ -32,7 +32,7 @@ if (username.value ==='') {
   if (email.value === '') {
     emailErr.className = 'block bg-red-500 text-white'
   } else {
-    emailSuccess.className = 'block bg-green-500 text-white'
+    emailSuccess.className = 'block bg-green-600 text-white'
   }
 
  //@TODO: add the validation for email
@@ -40,7 +40,7 @@ if (username.value ==='') {
    passwordErr.className = 'block bg-red-600 text-white'
  }
  else { 
-   passwordSuccess.className = 'block bg-green-500 text-white'
+   passwordSuccess.className = 'block bg-green-600 text-white'
   }
 
  
@@ -50,7 +50,7 @@ if (username.value ==='') {
     // 3. If empty, give user some feedback
     ConfirmpasswordErr.className = 'block bg-red-500 text-white'
   } else {
-    ConfirmpasswordSuccess.className = 'block bg-green-500 text-white'
+    ConfirmpasswordSuccess.className = 'block bg-green-600 text-white'
   }
 
   //@TODO: add the validation for password
