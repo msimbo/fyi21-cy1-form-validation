@@ -3,12 +3,17 @@ const regForm = document.getElementById('registration-form')
 
 const username = document.getElementById('username')
 const usernameErr = username.nextElementSibling
+const usernameSuccess = usernameErr.nextElementSibling
 const email = document.getElementById('email')
 const emailErr = email.nextElementSibling
+const emailSuccess = emailErr.nextElementSibling
 const password = document.getElementById('password')
 const passwordErr = password.nextElementSibling
+const passwordSuccess = passwordErr.nextElementSibling
 const Confirmpassword = document.getElementById('password-2')
 const ConfirmpasswordErr = Confirmpassword.nextElementSibling
+const ConfirmpasswordSuccess = ConfirmpasswordErr.nextElementSibling
+
 
 // const usernameErr = document.getElementById("usernameErr") 
 
@@ -18,7 +23,7 @@ regForm.addEventListener('click', function (e) {
 if (username.value ==='') {
   usernameErr.className = 'block bg-red-500 text-white'
 } else {
-  console.log('sending to server')
+  usernameSuccess.className = 'block bg-green-500 text-white'
 }
 
 
@@ -27,14 +32,16 @@ if (username.value ==='') {
   if (email.value === '') {
     emailErr.className = 'block bg-red-500 text-white'
   } else {
-    console.log('sending to server')
+    emailSuccess.className = 'block bg-green-500 text-white'
   }
 
  //@TODO: add the validation for email
  if (password.value === '') {
    passwordErr.className = 'block bg-red-600 text-white'
  }
- else { console.log('sending to server')}
+ else { 
+   passwordSuccess.className = 'block bg-green-500 text-white'
+  }
 
  
   //@TODO: add the validation for email
@@ -43,7 +50,7 @@ if (username.value ==='') {
     // 3. If empty, give user some feedback
     ConfirmpasswordErr.className = 'block bg-red-500 text-white'
   } else {
-    console.log('sending to server')
+    ConfirmpasswordSuccess.className = 'block bg-green-500 text-white'
   }
 
   //@TODO: add the validation for password
