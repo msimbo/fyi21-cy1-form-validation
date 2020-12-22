@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="dist/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css" integrity="sha512-+WF6UMXHki/uCy0vATJzyA9EmAcohIQuwpNz0qEO+5UeE5ibPejMRdFuARSrl1trs3skqie0rY/gNiolfaef5w==" crossorigin="anonymous" />
     <title>Form Validation</title>
 </head>
 <body>
@@ -17,31 +18,45 @@
             <div class="my-4" id="my-username">
                 <label for="username">Username</label>
                 <input type="text" id="username" name="username" placeholder="your username"
-                       class="base-input block"
-                >
+                       class="base-input block">
+                       <small class="hidden"> Please enter your username</small>
+                       <small class="hidden">Great Job!</small>
+                
                 <div>
                     <!-- whatever we want -->
                 </div>
 <!--                <small class="hidden">Please enter your username</small>-->
             </div>
 
+            
             <div class="my-4">
 
                 <label for="email">Email</label>
                 <input type="text" id="email" name="email" placeholder="me@domain.com"
+form-validation
+                       class="base-input">
+                <small class="hidden">Please type in your email address</small> 
+                 <small class="hidden">Thank you!</small>
+              
+=======
                        class="base-input"
                 >
                 <div></div>
+ main
             </div>
 
             <div class="my-4">
                 <label for="password">Password</label>
                 <input type="password" id="password" name="password" class="base-input">
+                <small class="hidden">Please enter your password</small>
+                <small class="hidden">Success!</small>
             </div>
 
             <div class="my-4">
                 <label for="password-2">Confirm Password</label>
                 <input type="password" id="password-2" name="password-2" class="base-input">
+                <small class="hidden">Please type your password again</small>
+                <small class="hidden">Success!!</small>              
             </div>
 
             <button class="bg-green-200 p-3 w-full">Register Now</button>
