@@ -2,7 +2,10 @@
 const form = document.getElementById('registration-form')
 
 const username = document.getElementById('username')
-<<<<<<< HEAD
+
+
+ form-validation
+
 const usernameErr = username.nextElementSibling
 const usernameSuccess = usernameErr.nextElementSibling
 const email = document.getElementById('email')
@@ -56,7 +59,7 @@ if (username.value ==='') {
 
   //@TODO: add the validation for password
 })
-=======
+
 const email = document.getElementById('email')
 
 // adding event listener on the form
@@ -135,4 +138,3 @@ function validateMinLength (input) {
     showSuccess(input)
   }
 }
->>>>>>> upstream/main
